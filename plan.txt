@@ -1,0 +1,15 @@
+[
+{
+    date: {
+        ema: ema_price
+        sma20: sma20_price,
+        sma120:sma120_price,
+        fibonacci: fibonacci_price,
+        trendLine1: trendLine1_price,
+        trendLine2: trendLine2_price,
+    }
+}
+]
+
+- P/E
+-PEG  
