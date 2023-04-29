@@ -5,6 +5,7 @@ import LandingPage from './components/LandingPage';
 import StockPage from './components/StockPage';
 import RegisterPage from './components/RegisterPage';
 import SignInPage from './components/SignInPage';
+import FavStock from './components/FavStocks';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path='/search' element={<LandingPage />} />
         <Route path='/register' element={<RegisterPage />} />
         <Route path='/' element={<SignInPage />} />
+        <Route path='/favstock' element={<FavStock />} />
       </Routes>
     </Router>
   </div>

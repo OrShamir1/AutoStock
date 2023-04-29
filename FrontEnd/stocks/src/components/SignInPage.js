@@ -18,20 +18,22 @@ const SignInPage = () => {
         const requestBody = {
             name: name,
             password: password
-          };
-          
-          axios.post('http://localhost:3005/users/login', requestBody)
+        };
+
+        axios.post('http://localhost:3005/users/login', requestBody)
             .then(response => {
-              if(response.data == "Success")  
-              navigate(`/search`);
-              else(
-                alert("Login details are incorrect")
-              )
+                if (response.data == "'Not Allowed'") {
+                    alert("Login details are incorrect")
+                }
+                else {
+                    localStorage.setItem('token', response.data.accessToken)
+                    navigate(`/search`);
+                }
             })
             .catch(error => {
-              console.error(error);
+                console.error(error);
             });
-        
+
     }
     return (
         <div id='reg-form'>

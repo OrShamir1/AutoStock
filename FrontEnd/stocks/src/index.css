@@ -89,3 +89,14 @@ button {
   margin: 2em;
 }
 
+.fav-stock{
+  text-align: center;
+  margin: 1rem;
+  font-size: xx-large;
+  text-decoration: underline;
+}
+
+#vertical-charts{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
