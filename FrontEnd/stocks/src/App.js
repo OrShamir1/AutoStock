@@ -11,7 +11,7 @@ const App = () => {
   return (
   <div>
     <Router>
-      <h1>AutoStock</h1>
+      <h1 id='main-header'>AutoStock</h1>
       <Navbar />
       <Routes>
         <Route path='/Stock/:symbol' Component={StockPage} />

@@ -42,7 +42,7 @@ const RegisterPage = () => {
             <div className='password'>
                 <h2 style={{ display: "inline" }}>Password: </h2>
                 <div id="input" style={{ display: "inline" }} >
-                    <input type="text" value={password} onChange={updatePassword} />
+                    <input type="password" value={password} onChange={updatePassword} />
                 </div>
             </div>
             <button onClick={handleClick}>Register</button>

@@ -100,3 +100,14 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
+body{
+  background-color: #EEEEEE;
+}
+
+#main-header{
+  background-color: #00ADB5;
+  margin: 0px;
+  padding: 1rem;
+  color: white;
+}
